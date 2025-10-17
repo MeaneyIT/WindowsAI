@@ -1,0 +1,1 @@
+C:\Users\DaveMeaney\Documents\Visual Studio 2022\Windows AI API - Phi Silica Demo\Generate_with_Phi_SilicaSample\Generate_with_Phi_SilicaSample.csproj;x64

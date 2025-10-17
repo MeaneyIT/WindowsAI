@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window
+    x:Class="AIDevGallery.Sample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:AIDevGallery.Sample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Generate with Phi SilicaSample"
+    mc:Ignorable="d">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid>
+        <!-- Header Section -->
+        <StackPanel Orientation="Vertical" Margin="16" VerticalAlignment="Top">
+            <Image Source="Assets/CompanyLogo.png" Height="60" Width="Auto" Stretch="Uniform" />
+            <TextBlock Text="Phi Silica Chatbot" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       Margin="0,12,0,4" />
+            <TextBlock Text="Interact with the Phi Silica chatbot below to generate intelligent responses, explore AI capabilities, and streamline your workflow." 
+                       FontSize="14" 
+                       TextWrapping="Wrap" 
+                       Foreground="Gray" />
+        </StackPanel>
+
+        <!-- Main Content Area -->
+        <Frame x:Name="RootFrame" Padding="16" Margin="0,160,0,0" />
+
+        <!-- Loading Overlay -->
+        <Grid
+            x:Name="ProgressRingGrid"
+            Background="{ThemeResource SmokeFillColorDefaultBrush}"
+            Visibility="Visible">
+            <ProgressRing
+                Width="50"
+                Height="50"
+                IsActive="True" />
+        </Grid>
+    </Grid>
+</Window>
